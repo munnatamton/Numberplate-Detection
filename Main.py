@@ -20,17 +20,17 @@ def rto_data(N):
     dat=N
     if(dat=='MCLRNF1'):
         name='Sandeep'
-        mble='8892289046'
-        mlid='sndpchandar@gmail.com'
+        mble='**********'
+        mlid='***@gmail.com'
         return mble,mlid
     if(dat=='Z00MN65'):
-        name='Vamsi'
-        mble='9986551632'
-        mlid='vamsikrishna.cherukupalli@gmail.com'
+        name='****'
+        mble='**********'
+        mlid='*****@gmail.com'
         return mble,mlid
 
 def smail(mlid):
-    fromaddr = "vamsikrishna.cherukupalli@gmail.com"
+    fromaddr = "*****@gmail.com"
     toaddr = mlid
  
     msg = MIMEMultipart()
@@ -55,7 +55,7 @@ def smail(mlid):
  
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(fromaddr, "7416583229")
+    server.login(fromaddr, "******")
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     print('Mail Sent Successfully')
